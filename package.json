@@ -1,0 +1,31 @@
+﻿{
+  "name": "jsnbt-meta",
+  "version": "1.0.0",
+  "description": "Meta utilities for the jsnbt pages",
+  "keywords": [
+    "jsnbt",
+    "jsonbot"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/akonoupakis/jsnbt-meta"
+  },
+  "bugs": {
+    "url": "https://bitbucket.org/akonoupakis/jsnbt-meta/issues",
+    "email": "konoupakis@gmail.com"
+  },
+  "author": {
+    "name": "Apostolis Konoupakis",
+    "email": "konoupakis@gmail.com",
+    "url": ""
+  },
+  "config": {},
+  "main": "src/app/index.js",
+  "files": [
+    "src/app/**",
+    "src/cfg/**",
+    "src/web/**"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}
