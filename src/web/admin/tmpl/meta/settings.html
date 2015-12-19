@@ -1,0 +1,37 @@
+﻿<div class="row title-container">
+    <div class="col-sm-12">
+        <span ng-click="back()" class="glyphicon glyphicon-arrow-left back-button"></span>
+        <h1 class="title">meta</h1>
+    </div>
+</div>
+
+<hr />
+
+<div class="panel" id="settings-code" data-scrollspy="title">
+    <h4>prefix or suffix the meta titles</h4>
+    <div class="row">
+        <ctrl-text class="col-sm-5" ng-model="settings.title.prefix[language]" ng-auto-focus="true" ng-label="prefix"></ctrl-text>
+        <ctrl-text class="col-sm-2" ng-model="settings.title.separator" ng-label="separator"></ctrl-text>
+        <ctrl-text class="col-sm-5" ng-model="settings.title.suffix[language]" ng-label="suffix"></ctrl-text>
+    </div>
+    <div class="row">
+        <ctrl-node-list class="col-sm-12" ng-language="defaults.language" ng-model="settings.title.restrictedNodes" ng-domain="'core'" ng-label="except in nodes">
+            {{model.title[language]}}
+        </ctrl-node-list>
+    </div>
+</div>
+
+<div class="panel" id="settings-defaults" data-scrollspy="defaults">
+    <h4>meta default values</h4>
+    <div id="page-meta-title" class="row" data-scrollspy="title">
+        <ctrl-text class="col-sm-12" ng-model="settings.defaults.title[language]" ng-label="title"></ctrl-text>
+    </div>
+    <div id="page-meta-description" class="row" data-scrollspy="description">
+        <ctrl-text-area class="col-sm-12" ng-rows="4" ng-model="settings.defaults.description[language]" ng-label="description"></ctrl-text-area>
+    </div>
+    <div id="page-meta-keywords" class="row" data-scrollspy="keywords">
+        <ctrl-tags class="col-sm-12" ng-model="settings.defaults.keywords[language]" ng-placeholder="add a keyword" ng-label="keywords"></ctrl-tags>
+    </div>
+</div>
+
+<hr /> 
