@@ -1,12 +1,12 @@
 ﻿; (function () {
     "use strict";
 
-    angular.module("jsnbt-meta", ['ngRoute'])
-    .config(function ($routeProvider) {
+    angular.module("jsnbt-meta", ['ngPathRouter'])
+    .config(['$routerProvider', function ($routerProvider) {
 
         var TEMPLATE_BASE = jsnbt.constants.TEMPLATE_BASE;
 
-        var router = new jsnbt.ViewRouter('meta', $routeProvider);
+        var router = new jsnbt.ViewRouter('meta', $routerProvider);
 
         router.when('/modules/meta', function (x) {
             x.section('meta');
@@ -18,6 +18,6 @@
             })
         });
 
-    });
+    }]);
 
 })();
